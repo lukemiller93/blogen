@@ -26,10 +26,10 @@
             <a href="index.html" class="nav-link">Dashboard</a>
           </li>
           <li class="nav-item px-2">
-            <a href="posts.html" class="nav-link ">Posts</a>
+            <a href="posts.html" class="nav-link">Posts</a>
           </li>
           <li class="nav-item px-2">
-            <a href="categories.html" class="nav-link active">Categories</a>
+            <a href="categories.html" class="nav-link">Categories</a>
           </li>
           <li class="nav-item px-2">
             <a href="users.html" class="nav-link">Users</a>
@@ -57,12 +57,12 @@
   </nav>
 
   <!-- HEADER -->
-  <header id="main-header" class="py-2 bg-success text-white">
+  <header id="main-header" class="py-2 bg-primary text-white">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           <h1>
-            <i class=" icon-spin fa fa-folder-open-o"></i> Categories</h1>
+            <i class="fa fa-gear"></i> Settings</h1>
         </div>
       </div>
     </div>
@@ -72,94 +72,58 @@
   <section id="actions" class="py-4 mb-4 bg-light">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 ml-auto">
-          <div class="input-group">
-            <input type="text" placeholder="Search" class="form-control">
-            <span class="input-group-btn">
-              <button class="btn btn-success">Search</button>
-            </span>
-          </div>
+        <div class="col-md-4 mr-auto mb-2">
+          <a href="index.html" class="btn btn-light btn-block">
+            <i class="fa fa-arrow-left"></i> Back to Dashboard</a>
+        </div>
+        <div class="col-md-3 mb-2">
+          <a href="#" class="btn btn-success btn-block">
+            <i class="fa fa-check"></i> Save Changes</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CATEGORIES -->
-  <section id="categories">
+  <!-- SETTINGS -->
+  <section id="settings">
     <div class="container">
       <div class="row">
         <div class="col">
           <div class="card">
             <div class="card-header">
-              <h4>Latest Categories</h4>
+              <h4>Edit Post</h4>
             </div>
-            <table class="table table-striped">
-              <thead class="thead-inverse">
-                <tr>
-                  <th>#</th>
-                  <th>Title</th>
-                  <th>Date Posted</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td scope="row">1</td>
-                  <td>Web Development</td>
-                  <td>July 12, 2017</td>
-                </tr>
-                <tr>
-                  <td scope="row">2</td>
+            <div class="card-body">
+              <form action="">
+                <fieldset class="form-check">
+                  <legend>Allow User Registrations</legend>
+                  <div class="form-check">
+                    <label for="" class="form-check-label">
+                      <input type="radio" class="form-check-input" value="yes" checked > Yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label for="" class="form-check-label">
+                      <input type="radio" class="form-check-input" value="no"> No
+                    </label>
+                  </div>
+                </fieldset>
 
-                  <td>Tech Gadgets</td>
-                  <td>July 13, 2017</td>
-                </tr>
-                <tr>
-                  <td scope="row">3</td>
-
-                  <td>Web Development</td>
-                  <td>July 14, 2017</td>
-                </tr>
-                <tr>
-                  <td scope="row">4</td>
-                  <td>Business</td>
-                  <td>July 15, 2017</td>
-                </tr>
-                <tr>
-                  <td scope="row">5</td>
-                  <td>Web Development</td>
-                  <td>July 16, 2017</td>
-                </tr>
-                <tr>
-                  <td scope="row">6</td>
-                  <td>Health & Wellness</td>
-                  <td>July 16, 2017</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <nav class="ml-4">
-              <ul class="pagination">
-                <li class="page-item disabled">
-                  <a href="#" class="page-link">Previous</a>
-                </li>
-                <li class="page-item active">
-                  <a href="#" class="page-link">1</a>
-                </li>
-                <li class="page-item">
-                  <a href="#" class="page-link">2</a>
-                </li>
-                <li class="page-item">
-                  <a href="#" class="page-link">3</a>
-                </li>
-                <li class="page-item">
-                  <a href="#" class="page-link">4</a>
-                </li>
-                <li class="page-item">
-                  <a href="#" class="page-link">Next</a>
-                </li>
-              </ul>
-            </nav>
+                <fieldset class="form-check">
+                  <legend>Homepage Format</legend>
+                  <div class="form-check">
+                    <label for="" class="form-check-label">
+                      <input type="radio" class="form-check-input" value="post" checked > Post Index
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label for="" class="form-check-label">
+                      <input type="radio" class="form-check-input" value="page"> Single Page
+                    </label>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -175,6 +139,7 @@
       </div>
     </div>
   </footer>
+
 
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
